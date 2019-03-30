@@ -23,13 +23,13 @@ $.ajax({
     success: function(data) {
       if (data.length > 0) {
         $.each(data.reverse(), function(i, val) {
-          $('.shotme').prepend(
+          $('#shots').prepend(
             '<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></a>'
           )
         })
       }
       else {
-        $('.shotme').append('<p>No shots yet!</p>');
+        $('#shots').append('<p>No shots yet!</p>');
       }
     }
 });
