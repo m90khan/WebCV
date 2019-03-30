@@ -6,13 +6,13 @@ html, body {
   font-family: "Rubik";
   font-size: 15px;
 }
-#shots {
+.shotme {
   display: flex;
   flex-wrap: wrap;
   max-width: 1080px;
   margin: auto;
 }
-#shots .shot {
+.shotme .shot {
   position: relative;
   display: block;
   width: 25%;
@@ -20,13 +20,13 @@ html, body {
   color: white;
   text-decoration: none;
 }
-#shots .shot:hover img {
+.shotme .shot:hover img {
   opacity: 0.1;
 }
-#shots .shot:hover .title {
+.shotme .shot:hover .title {
   opacity: 1;
 }
-#shots .shot .title {
+.shotme .shot .title {
   position: absolute;
   width: calc(100% - 2rem);
   padding: 1rem;
@@ -36,7 +36,7 @@ html, body {
   font-weight: 500;
   letter-spacing: 1px;
 }
-#shots .shot img {
+.shotme .shot img {
   display: block;
   max-width: 100%;
   transition: opacity 0.2s ease-in-out;
